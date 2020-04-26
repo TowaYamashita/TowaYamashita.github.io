@@ -1,0 +1,38 @@
+body {
+    padding-top: 75px;
+}
+
+#Profile {
+    padding-top: 75px;
+    margin-top: -75px;
+}
+
+.card-img {
+    opacity: 0.8;
+}
+
+.nav-bg-color {
+    background-color: cornflowerblue;
+}
+
+.nav-font-color {
+    text-align: center;
+    color: white;
+}
+
+.main-bg-color {
+    background-color: lightgrey;
+}
+
+.content-bg-color {
+    background-color: white;
+}
+
+.table > tbody > tr > td{
+    border:2px solid black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    }

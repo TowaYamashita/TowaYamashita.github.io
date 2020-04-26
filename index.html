@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Original CSS-->
+        <link rel="stylesheet" href="custom.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -13,19 +15,113 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <h1>github.io test</h1>
-        <p><i class="far fa-laugh-wink"></i> FontAwesomeが正常に導入されたか確認</p>
+        <!-- Navbar -->
+        <div class="fixed-top nav-bg-color">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link nav-font-color" href="#">
+                        <i class="fas fa-home fa-2x fa-fw"></i>
+                        <span class="d-none d-sm-block">TOP</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font-color" href="#Profile">
+                        <font color="white">
+                            <i class="far fa-address-card fa-2x fa-fw"></i>
+                            <span class="d-none d-sm-block">Profile</span>
+                        </font>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font-color" href="#Product">
+                        <font color="white">
+                            <i class="fas fa-terminal fa-2x fa-fw"></i>
+                            <span class="d-none d-sm-block">Product</span>
+                        </font>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-font-color" href="#Contact">
+                        <font color="white">
+                            <i class="far fa-envelope fa-2x fa-fw"></i>
+                            <span class="d-none d-sm-block">Contact</span>
+                        </font>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar End -->
 
-        <div class="container">
+        <!--Contents -->
+        <div class="container-fluid main-bg-color">
             <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                    通常は縦に並ぶが大画面以上で横並びになる
+                <!-- Welcome-->
+                <div class="col-11 col-lg-8  mx-auto">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="img/welcome.jpg" alt="カードの画像">
+                    <div class="card-img-overlay" style="text-align: center;">
+                        <h1 class="card-text">Welcome to My Portfolio!</h1>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                    通常は縦に並ぶが大画面以上で横並びになる
                 </div>
+                <!-- Welcome End-->
+                <!-- Profile -->
+                <div class="col-11 col-lg-8  mx-auto content-bg-color">
+                    <div style="text-align: center;">
+                        <h1 id="Profile">Profile</h1>
+                        <p>佐世保工業高等専門学校に通っている21卒予定の山下永遠です。</p>
+                        <p>学生時代は高専ロボコンに打ち込んでいましたが、</p>
+                        <p>世の中のWebサービスやWebアプリケーションがどのように作られているかに興味を持ち</p>
+                        <p>昨年からプログラミングを学び始めました。</p>
+                        <a class="btn btn-dark" href="https://github.com/TowaYamashita">github / @TowaYamashita</a>
+                        <a class="btn btn-success" href="https://qiita.com/CAD-guest01">Qiita / @CAD-guest01</a>
+
+                        <h2>スキルセット</h2>
+                        <table class="table table-responsive-sm table-bordered">
+                            <tr class="text-nowrap">
+                                <td>言語</td>
+                                <td>HTML, CSS, JavaScript, PHP, Ruby, PostgreSQL</td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td>フレームワーク</td>
+                                <td>Ruby on Rails, Bootstrap</td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td>ツール</td>
+                                <td>Git, Heroku, VirtualBox, docker</td>
+                            </tr>
+                            <tr class="text-nowrap">
+                                <td>OS</td>
+                                <td>Linux(Ubuntu), Windows</td>
+                            </tr>
+                        </table>
+                    </div>        
+                </div>
+                <!-- Profile End -->
+                <!-- Product -->
+                <div class="col-11 col-lg-8 mx-auto content-bg-color">
+                    <div style="text-align: center;">
+                        <h1 id="Product">Product</h1>
+                        <div>
+                            <a href="https://demo-corucu.herokuapp.com/"><img src="img/introduction_corucu.png" alt="introduction_corucu"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product End -->
+                <!-- Contact -->
+                <div class="col-11 col-lg-8 mx-auto content-bg-color">
+                    <div style="text-align: center;">
+                        <h1 id="Contact">Contact</h1>
+                        <h4>お問い合わせの際は以下のメールアドレス宛てにお願いします。</h4>
+                        <h5>Yamashita.Towa00(at)gmail.com</h5>
+                        <h5>(atを@に置き換えてください)</h5>
+                    </div>
+                </div>
+                <!-- Contact End -->
             </div>
         </div>
+        <!-- Contents End -->
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
